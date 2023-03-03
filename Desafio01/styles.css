@@ -1,0 +1,166 @@
+/* ========== Import Font ========== */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;400;500;600;700&display=swap');
+
+/* ========== Variables ========== */
+:root{
+  --purple: #574AE8;
+  --purple-gradient: linear-gradient(to right, #574AE8, #3EA1D8);
+
+  --white: #FFFFFF;
+  --white-200: #F3F5F7;
+
+  --gray: #717171;
+  --gray-dark: #1A202C;
+}
+
+/* ========== CSS Reset ========== */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.container{
+  max-width: 56.25rem;
+  margin: 0 auto;
+}
+
+body{
+  background-color: var(--white-200);
+}
+
+/* ========== Styling HTML ========== */
+/* = Header = */
+header{
+  background-image: var(--purple-gradient);
+}
+header .container{
+  padding-top: 2.5625rem;
+  padding-bottom: 2.5625rem;
+}
+
+
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--white);
+}
+.top > h1{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.top > span{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.search-box{
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.875rem;
+  display: flex;
+  align-items: center;
+  margin-top: 4.56rem;
+}
+.search-box > input{
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+  outline: 0;
+  font-size: 1.125rem;
+  margin-left: 4rem;
+  color: var(--white-200);
+  width: 100%;
+}
+.search-box > input::placeholder{
+  color: var(--white-200);
+}
+.svg-search{
+  position: absolute;
+  top: 0.875rem;
+  left: 1.375rem;
+}
+
+/* = Main = */
+
+main .container{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.item-news{
+  background-color: var(--white);
+  border-radius: 5px;
+  padding: 1.762rem;
+  margin-bottom: 3.125rem;
+}
+.top-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-item span:nth-child(1){
+  color: gray;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.item-news > h1{
+  font-weight: 400;
+  font-size: 1.625rem;
+  margin-top: 1.375rem;
+}
+.item-news > p{
+  color: var(--gray);
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  line-height: 32px;
+}
+
+/* ========== Media Queries ========== */
+@media (max-width: 800px){
+  html{
+    font-size: 12px;
+  }
+  .container{
+    max-width: 600px;
+  }
+}
+@media (max-width: 480px){
+  html{
+    font-size: 13px;
+  }
+  .svg-search{
+    display: none;
+  }
+  .container{
+    max-width: 390px;
+  }
+  .item-news{
+    padding: 1.45rem;
+  }
+  .item-news > p{
+    line-height: 26px;
+  }
+  .search-box > input{
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 321px){
+  html{
+    font-size: 10px;
+  }
+  .container{
+    max-width: 310px;
+  }
+  .item-news{
+    padding: 1.45rem;
+  }
+  .item-news > p{
+    line-height: 19px;
+  }
+}

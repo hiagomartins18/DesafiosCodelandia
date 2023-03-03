@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <link rel="stylesheet" href="./styles.css">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 04 - Codelândia</title>
+</head>
+<body>
+  <div class="form-image">
+    <img src="./assets/background.svg" alt="">
+  </div>
+  
+  
+  <div class="form-container loginpage">
+    <div class="form-titles">
+      <h3>Bem vindo de volta</h3>
+      <h1>Faça login na sua conta</h1>
+    </div>
+    <div class="form-body">
+      <form action="">
+        <label for="email">Email</label>
+        <input type="email" name="" id="email" required placeholder="Digite seu email"><br>
+
+        <label for="senha">Senha</label>
+        <input type="password" name="" id="senha" required placeholder="Digite sua senha"><br>
+      </form>
+      <div class="form-wrapper">
+        <div><input type="checkbox" name="" id="radio"><label for="radio">Lembrar de mim</label></div>
+        <a href="#" class="forgetBtn">Esqueceu sua senha?</a>
+      </div>
+      <div class="form-buttons">
+        <a href="">Entrar</a>
+        <a href="#">
+          <span><img src="./assets/google.svg" alt=""></span>
+          Ou faça login com o Google 
+        </a>
+      </div>
+    </div>
+    <span class="input-register">Não tem uma conta? <a href="#" class="signBtn"> Cadastre-se</a></span>
+  </div>
+
+  <div class="form-container recoverpage">
+    <div class="form-titles">
+      <h3>Esqueceu a senha? Sem problemas!</h3>
+      <h1>Recupere aqui sua senha</h1>
+    </div>
+    <div class="form-body">
+      <form action="">
+        <label for="emailRecover">Digite seu email para recuperação da senha</label>
+        <input type="email" id="emailRecover" placeholder="Digite aqui seu email">
+      </form>
+      <div class="form-buttons">
+        <a href="">Enviar</a>
+      </div>
+    </div>
+    <span class="input-register recoverpassword">Já tem uma conta? <a href="#" class="loginBtn"> Logar agora!</a></span>
+  </div>
+
+  <div class="form-container signinpage">
+    <div class="form-titles">
+      <h3>Ola, seja muito bem vindo!</h3>
+      <h1>Registre-se aqui</h1>
+    </div>
+    <div class="form-body">
+      <form action="">
+        <label for="nameRegister">Nome Completo</label>
+        <input type="text" id="nameRegister" placeholder="Digite aqui seu nome" required><br>
+
+        <label for="emailRegister">Email</label>
+        <input type="email" id="emailRegister" placeholder="Digite aqui seu email" required><br>
+
+        <label for="emailRegister">Senha</label>
+        <input type="password" id="passwordRegister" placeholder="Digite aqui sua senha" required><br>
+      </form>
+      <div class="form-buttons">
+        <a href="">Enviar</a>
+      </div>
+    </div>
+    <span class="input-register recoverpassword">Já tem uma conta? <a href="#" class="loginBtn"> Logar agora!</a></span>
+  </div>
+
+  <div class="form-container spinner">
+      <img src="./assets/spinner.gif" alt="">
+  </div>
+
+  <!-- JavaScript Link -->
+  <script src="./script.js"></script>
+</body>
+</html>

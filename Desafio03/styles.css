@@ -1,0 +1,234 @@
+/* ========== Import Font ========== */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:wght@400;700&display=swap');
+
+/* ========== CSS Variables ========== */
+:root{
+  --purple: #6C63FF;
+  --light-purple: #D7D4FF;
+
+  --white: #FFFFFF;
+  --white-200: #F9F9F9;
+  --gray: #555555;
+  --gray-dark: #2A2A2A;
+}
+
+/* ========== Reset CSS ========== */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*font-family: 'Lato', 'Merriweather', sans-serif;*/
+}
+img{
+  max-width: 100%;
+  display: block;
+}
+html{
+  font-size: 10px;
+}
+.container{
+  padding: 0rem 34rem;
+}
+
+/* ========== Styling HTML ========== */
+/* = Scroll = */
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--purple);
+  border-radius: 80px;
+}
+
+/* = Main = */
+main{
+  background-color: var(--light-purple);
+}
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10rem;
+  justify-content: center;
+  align-items: center;
+  padding-top: 13.8rem;
+  padding-bottom: 11.8rem;
+}
+.wrapper .texts > h1{
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 47px;
+  font-family: 'Merriweather';
+}
+.wrapper .texts > p{
+  font-size: 1.9rem;
+  font-weight: 400;
+  font-family: 'Lato';
+  line-height: 32px;
+  color: var(--gray);
+  margin-top: 1.75rem;
+  margin-bottom: 4.5rem;
+}
+.wrapper .texts > button{
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--purple);
+  padding: 1.4rem 5rem;
+  font-weight: 700;
+  font-family: 'Lato';
+  cursor: pointer;
+}
+
+
+/* = Cards Section = */
+section{
+  background-color: var(--white-200);
+}
+section .container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  row-gap: 7rem;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+}
+.card{
+  box-shadow: 0 0 20px 0 #0000001A;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.backgroundCard{
+  color: black;
+  width: 100%;
+}
+.textsCard{
+  padding: 3rem;
+}
+.textsCard > h1{
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-family: 'Merriweather';
+  color: #2B2B2B;
+}
+.textsCard > p{
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: 'Lato';
+  color: var(--gray);
+  line-height: 30px;
+  margin-top: 2.6rem;
+}
+
+
+/* = Footer Section = */
+footer{
+  background-color: var(--light-purple);
+}
+footer .container{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 0;
+}
+footer .container > h1{
+  font-family: 'Merriweather';
+  font-weight: 400;
+  color: var(--gray-dark);
+  font-size: 3.2rem;
+  margin-bottom: 6rem;
+}
+footer .container > form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+footer .container form input[type=text]{
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+  background-color: var(--white);
+  padding: 2rem 1.5rem;
+  width: 47rem;
+  font-family: 'Lato';
+  font-weight: 400;
+}
+footer .container form textarea{
+  outline: 0;
+  border: 0;
+  font-family: 'Lato';
+  font-weight: 400;
+  padding: 2rem 1.5rem;
+  border-radius: 6px;
+  resize: none;
+}
+footer .container form input[type=submit]{
+  margin-top: 3rem;
+  background-color: var(--purple);
+  color: var(--white);
+  font-family: 'Lato';
+  font-weight: 700;
+  box-shadow: 0px 5px 5px 0px #1717171A;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  text-align: center;
+  padding: 1.3rem 0rem;
+  cursor: pointer;
+}
+
+
+/* = Media Queries = */
+@media only screen and (max-width: 992px){
+
+}
+@media only screen and (max-width:801px){
+  .container{
+    padding: 0rem 10rem;
+  }
+  .wrapper{
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+    row-gap: 11rem;
+  }
+  section .container{
+    grid-template-columns: 1fr 1fr;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
+}
+@media only screen and (max-width: 601px) {
+  .container{
+    padding: 0rem 2rem;
+  }
+  .wrapper{
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+    row-gap: 11rem;
+  }
+  section .container{
+    grid-template-columns: 1fr;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    column-gap: 0rem;
+  }
+}
+@media only screen and (max-width: 471px){
+  html{
+    font-size: 8px;
+  }
+  .container{
+    padding: 0rem 1rem;
+  }
+  .wrapper{
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+  }
+}
